@@ -1,0 +1,73 @@
+/* Diseño del cuerpo de la página */
+body {
+    background-color: #f4f7fc;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor del formulario */
+.container {
+    max-width: 700px;
+    margin-top: 50px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos y subtítulos */
+.container h2 {
+    color: #20aca9;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.container p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+/* Alertas de estado */
+.alert {
+    margin-top: 20px;
+}
+
+/* Estilos para el input del correo */
+.form-control {
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Botón con estilo personalizado */
+.btn-custom {
+    background-color: #20aca9; /* Color personalizado */
+    color: white;
+    border-radius: 50px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición del color */
+}
+
+.btn-custom:hover {
+    background-color: #5EBC50; /* Cambio de color al pasar el mouse */
+    transform: scale(1.05); /* Efecto de aumentar el tamaño */
+    cursor: pointer;
+}
+
+/* Estilos para los enlaces */
+.text-center a {
+    color: #5EBC50;
+    text-decoration: none;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}

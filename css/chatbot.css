@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.chatbot-container {
+    position: fixed;
+    bottom: 130px;
+    right: 20px;
+    width: 270px;
+    background: #5EBC50; /* Color principal con transparencia */
+    border: 2px solid #34662d; /* Borde más oscuro */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 18px;
+    backdrop-filter: blur(12px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    
+    /* Chatbot inicialmente oculto */
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+/* Cuando se active */
+.chatbot-container.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.chatbot-header {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.chatbot-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.chatbot-links a:hover {
+    color: #FAD02E; /* Amarillo para efecto hover */
+}
+
+.chatbot-button {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease-in-out;
+    z-index: 1000;
+}
+
+.chatbot-button:hover {
+    transform: scale(1.1);
+}
+
+/* 🔥 AHORA EL FADEOUT SE APLICA AL BOTÓN Y AL CONTENEDOR */
+.fadeOut {
+    opacity: 0 !important;
+    transform: translateY(15px);
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+}

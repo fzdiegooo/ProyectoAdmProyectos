@@ -1,0 +1,322 @@
+@media (max-width: 400px) {
+    .primeraCabecera {
+        height: auto !important; /* Ajusta la altura automáticamente */
+        text-align: center !important; /* Centra el texto en pantallas pequeñas */
+        padding: 5px 0 !important; /* Espaciado para mejor visualización */
+    }
+    .telefono {
+        font-size: 13px !important; /* Reduce el tamaño de la fuente */
+        margin-left: 10px !important; /* Reduce el margen izquierdo */
+        display: flex !important; /* Asegura alineación correcta */
+        align-items: center !important; /* Centra verticalmente */
+        justify-content: center !important; /* Centra horizontalmente */
+        
+    }
+    .telefono i {
+        font-size: 14px !important; /* Ajusta el tamaño del icono */
+        margin-right: 6px !important; /* Reduce el margen del icono */
+    }
+}
+
+/* 📌 Estilos generales */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+/* 📌 Ajuste para el contenedor del logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* 📌 Ajuste de los logos */
+.logoPrincipal {
+    width: auto;
+}
+
+/* 📌 Logo predeterminado (visible en pantallas medianas y grandes) */
+.logoPrincipal.d-none.d-sm-flex {
+    height: 38px;
+    margin-left: 15px; /* Ajusta el valor según lo necesites */
+}
+
+/* 📌 Logo en pantallas pequeñas (menores a 250px) */
+.logoPrincipal.d-sm-none {
+    height: 50px;
+    margin-left: 30px; /* Ajusta el valor según lo necesites */
+}
+
+/* 📌 Ajuste responsivo en tablets */
+@media (max-width: 768px) {
+    .logoPrincipal.d-none.d-sm-flex {
+        height: 32px; /* Se reduce un poco */
+    }
+}
+
+/* 📌 Ajuste responsivo en móviles */
+@media (max-width: 576px) {
+    .logoPrincipal.d-none.d-sm-flex {
+        height: 28px;
+    }
+}
+
+/* 📌 Ajuste en pantallas ultra pequeñas */
+@media (max-width: 250px) {
+    .logoPrincipal.d-none.d-sm-flex {
+        display: none !important; /* Oculta el logo grande */
+    }
+
+    .logoPrincipal.d-sm-none {
+        display: block !important; /* Muestra el logo pequeño */
+        height: 40px; /* Ajuste de tamaño */
+    }
+}
+
+/* 📌 Ajustes de los iconos */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 5px;
+}
+
+/* 📌 Ajustes para la barra de búsqueda */
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+}
+
+/* 📌 Ajustes de los botones de login y carrito */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 📌 Ajustes en móviles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        order: 2;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        order: 3;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* 📌 Ocultar el texto "Iniciar sesión" en pantallas menores a 800px */
+@media (max-width: 850px) {
+    .iniciar-sesion-text {
+        display: none;
+    }
+}
+
+/* 📌 Ocultar la barra de búsqueda en pantallas pequeñas y mostrar el icono */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 📌 Ocultar el buscador cuando la pantalla sea menor o igual a 690px */
+@media (max-width: 750px) {
+    .form-container .navbar-search {
+        display: none !important;
+    }
+
+    /* 📌 Asegurar que el icono de la lupa esté visible */
+    .nav-item.d-sm-none {
+        display: block !important;
+    }
+}
+
+/* 📌 En pantallas grandes, oculta el icono de la lupa extra */
+@media (min-width: 750px) {
+    .nav-item.d-sm-none {
+        display: none !important;
+    }
+}
+
+/* 📌 Aumentar espacio entre el buscador y el icono de inicio de sesión */
+.navbar-nav .nav-item {
+    margin-left: 10px;
+}
+
+/* 📌 Aumentar el espacio entre los íconos de usuario y carrito en pantallas pequeñas */
+@media (max-width: 900px) {
+    .navbar-nav {
+        gap: 20px; /* Aumenta el espacio entre los elementos */
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 15px; /* Agrega más margen entre el buscador y el icono */
+    }
+}
+
+/* 📌 Ajuste adicional en pantallas muy pequeñas */
+@media (max-width: 680px) {
+    .navbar-nav {
+        gap: 25px; /* Más separación en móviles */
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 20px;
+    }
+}
+
+/* Contenedor de categorías */
+.cetegoriasCabecera {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    min-height: 65px;
+    padding: 10px;
+    background-color: white;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Ocultar barra de desplazamiento */
+.cetegoriasCabecera::-webkit-scrollbar {
+    display: none;
+}
+.cetegoriasCabecera {
+    scrollbar-width: none;
+}
+
+/* Estilos para los grupos de categorías */
+.cetegoriasGrupo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5px; /* Ajusta la altura si es necesario */
+}
+
+/* Estilos para los botones de categorías */
+.btn-categoria {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color:rgb(255, 255, 255); /* Fondo rosa claro */
+    color: #696969; /* Color fucsia del texto */
+    font-weight: bold;
+    font-size: 14px; /* Reduce el tamaño del texto */
+    padding: 8px 15px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cambia color al pasar el mouse */
+.btn-categoria:hover {
+    background-color:#6969695b;
+    color:  #696969; /* Color fucsia del texto */
+}
+
+/* Estilos para los íconos dentro del botón */
+.btn-categoria .iconos-categorias {
+    width: 18px; /* Reduce el tamaño del icono */
+    height: 18px;
+}
+
+/* Ocultar categorías individuales cuando la pantalla es pequeña */
+@media (max-width: 900px) and (max-height: 641px) {
+    .cetegoriasGrupo:not(:first-child) { 
+        display: none; /* Oculta todas las categorías menos el botón */
+    }
+}
+
+/* Mostrar el botón siempre */
+#cetegoriasDropdown {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5EBC50;
+}
+
+/* Estilos para la lista desplegable */
+.dropdown-menu {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    min-width: 220px;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+/* Estilos para los elementos de la lista */
+.dropdown-item {
+    font-size: 14px;
+    font-weight: bold;
+    color: #696969;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cambio de color en los elementos al pasar el mouse */
+.dropdown-item:hover {
+    background-color:#6969695b;
+    color: #696969;
+    cursor: pointer;
+}
+
+/* Asegurar que el menú se muestra correctamente */
+.dropdown-menu {
+    z-index: 9999 !important;
+}
+
+/*Estilos para el buscador---------------------------------------------------------------------------------*/
+/* Estilo para la lista de resultados */
+/* Estilo para la lista de resultados */
+#lista {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px; /* Agrega un pequeño espacio entre la barra de búsqueda y la lista */
+    width: calc(100% - 18px); /* Ajusta el ancho para que no sea tan grande */
+    max-height: 200px; /* Limita la altura máxima de la lista */
+    overflow-y: auto; /* Permite desplazamiento vertical si la lista es larga */
+    overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+    position: absolute;
+    top: calc(100% + 5px); /* Espacio extra debajo del input */
+    z-index: 9999; /* Asegura que la lista esté por encima de otros elementos */
+    background-color: #fff; /* Color de fondo de la lista */
+    border-radius: 0.25rem; /* Borde redondeado */
+}
+
+/* Estilo para los elementos de la lista */
+#lista li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transición suave */
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilo para los elementos de la lista al pasar el cursor */
+#lista li:hover {
+    background-color: #48B6C1; /* Color de fondo al pasar el cursor */
+    color: white; /* Color del texto al pasar el cursor */
+    transform: scale(1.02); /* Pequeño efecto de escala */
+    border-radius: 5px;
+}
+

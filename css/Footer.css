@@ -1,0 +1,236 @@
+/*Footer CSS---------------------------------------------------------------------------------*/
+
+/* Agrega márgenes alrededor de los contenedores */
+.col-12.col-md-3 {
+    margin-left: 20px; /* Separar del borde izquierdo */
+    margin-right: 20px; /* Separar del borde derecho */
+}
+
+/* Estilo para los enlaces dentro de las secciones */
+.link a {
+    color: white; /* Los enlaces serán blancos por defecto */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Asegura que cada enlace ocupe su propio bloque */
+    margin-bottom: 10px; /* Espaciado entre los enlaces */
+}
+
+/* Cambiar el color de los enlaces a negro cuando se pasa el mouse */
+.link a:hover {
+    color: black; /* Los enlaces se ponen negros al pasar el mouse */
+    text-decoration: none;
+}
+
+
+
+
+.pie-pagina {
+    width: 100%;
+    background: linear-gradient(to bottom, #65BD50, #2DB553);
+    margin-top: 0vh;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 30px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box figure .logo {
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: black;
+}
+
+.pie-pagina .grupo-2 {
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+/* Elimina cualquier sombra de la tarjeta */
+.accordion .card {
+    border: none; /* Elimina los bordes */
+    background-color: transparent; /* Fondo transparente */
+    box-shadow: none; /* Elimina las sombras */
+}
+
+/* Estilo para los encabezados de las tarjetas (títulos) */
+.accordion .card-header {
+    background-color: transparent; /* Fondo transparente para el encabezado */
+    border-bottom: none; /* Elimina el borde inferior */
+    text-align: center; /* Centra el texto */
+}
+
+.accordion .card-header h5 {
+    color: white; /* Establece el color del texto en blanco */
+    margin-bottom: 0; /* Elimina el margen inferior */
+}
+
+/* Estilo para el cuerpo de la tarjeta */
+.accordion .card-body {
+    padding: 15px; /* Agrega separación entre los elementos */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo para los ítems del menú */
+.accordion .dropdown-item {
+    padding: 10px 0; /* Agrega separación entre los ítems del menú */
+    display: block; /* Asegura que los elementos se muestren uno debajo del otro */
+    text-align: center; /* Centra el texto de los ítems */
+    text-decoration: none; /* Elimina el subrayado */
+    color: white; /* Asegura que el texto de los ítems sea blanco */
+}
+
+/* Estilo para los enlaces con imágenes (como los íconos de redes sociales) */
+.accordion .dropdown-item img {
+    margin-right: 5px; /* Agrega un pequeño espacio entre el icono y el texto */
+    vertical-align: middle; /* Alinea el icono verticalmente con el texto */
+}
+
+/* Si quieres cambiar el color de los ítems del menú cuando se pasa el mouse por encima */
+.accordion .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efecto hover con un fondo suave */
+}
+/* Estilo para los botones (botones de acordeón) */
+.accordion .btn-link {
+    color: black !important; /* Establece el color del texto en negro */
+    text-decoration: none !important; /* Elimina el subrayado */
+    background-color: transparent !important; /* Elimina el fondo */
+    border: none !important; /* Elimina los bordes */
+    padding: 0 !important; /* Elimina el padding extra */
+    font-size: 16px; /* Ajusta el tamaño de la fuente si es necesario */
+}
+
+/* Si quieres cambiar el color cuando el botón está activo (presionado) */
+.accordion .btn-link:focus,
+.accordion .btn-link:hover {
+    color: black !important; /* Mantiene el color negro cuando el botón está en hover o foco */
+    text-decoration: none !important; /* Asegura que no haya subrayado en hover o foco */
+}
+
+/* Estilos para los enlaces y los iconos */
+/* Eliminar subrayado en todos los enlaces */
+.social-item {
+    color: white; /* Color blanco por defecto */
+    text-decoration: none !important; /* Asegurarnos de que no haya subrayado */
+    margin-bottom: 25px; /* Separación entre los elementos */
+    transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+/* Cambio de color de los iconos y texto al pasar el mouse */
+.social-item:hover {
+    color: black !important; /* Cambia a negro cuando el mouse pasa por encima */
+}
+
+.social-item:hover i {
+    color: black !important; /* Cambia el color del icono a negro cuando el mouse pasa por encima */
+}
+
+/* Aseguramos que el icono de Instagram también se vea afectado */
+.social-item i {
+    margin-right: 10px; /* Separación entre el icono y el texto */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+/* Evitar que los iconos se subrayen */
+.social-item:hover {
+    text-decoration: none; /* Asegurarnos de que no se subraye */
+}
+
+/* Alineación y centrado de los íconos y texto */
+.social-item .d-flex {
+    align-items: center;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    color: black;
+}
+
+.social-icon {
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+    filter: invert(0); /* Asegura que los íconos se vuelvan negros al pasar el ratón */
+}
+
+.follow-us a {
+    margin-bottom: 10px; /* Separación entre Facebook e Instagram */
+}
+
+
+@media (max-width: 1110px) {
+    .social-item span {
+        display: none; /* Oculta el texto cuando el tamaño de la pantalla es menor a 1080px */
+    }
+
+    .social-item img {
+        width: 40px; /* Agranda el ícono a 40px de ancho y alto */
+        height: 40px;
+    }
+
+    .row.g-3 {
+        display: flex;
+        flex-direction: row; /* Los íconos estarán en fila */
+        justify-content: space-around; /* Espacio entre los íconos */
+    }
+
+    .col-6 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px; /* Espacio entre los íconos */
+        width: auto; /* Los íconos ocuparán el espacio necesario */
+    }
+}

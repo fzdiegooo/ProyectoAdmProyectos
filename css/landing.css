@@ -1,0 +1,1029 @@
+/* Estilos globales---------------------------------------------------------------------------------*/
+body,
+html {
+    /*width: 100%;*/
+    margin: 0;
+    padding: 0;
+
+}
+
+.fondo {
+    background-color: #fafafa;
+    padding: 0 !important;
+}
+
+/* Estilo básico para la barra de cabecera---------------------------------------------------------------------------------*/
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: 20px;*/
+    z-index: 100;
+    /* Asegura que esté por encima de otros elementos */
+    transition: top 0.3s;
+    /* Agrega una transición suave */
+}
+
+/*Estilos primera cabecera---------------------------------------------------------------------------------*/
+.primeraCabecera {
+    font-family: Poppins;
+    margin: 0% !important;
+}
+
+.telefono {
+    text-decoration: none !important;
+    color: #ffffff;
+}
+
+.telefono:hover {
+    color: #ffffff;
+    /* Cambia el color del texto a azul al pasar el cursor sobre él */
+    text-decoration: underline;
+    /* Agrega un subrayado al texto al pasar el cursor sobre él */
+}
+
+/*Estilos para el topbar---------------------------------------------------------------------------------*/
+.segundaCabecera {
+    margin-top: -3.8vh !important;
+    height: 70px !important;
+}
+
+/*Estilos barra de categorias---------------------------------------------------------------------------------*/
+.categoriasCabecera {
+    height: 50px !important;
+    margin-top: 14vh;
+
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 20px;
+    color: #5EBC50;
+    font-size: 1.8vh;
+}
+
+.cetegoriasGrupo {
+    height: 40px !important;
+    width: auto !important;
+    margin-top: 0vh;
+    cursor: pointer;
+}
+
+.grupos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.iconos-categorias {
+    width: 3vh;
+    height: auto;
+}
+
+/*Estilos para botones Comprar dentro de DETALLES---------------------------------------------------------------------------------*/
+.button-comprar {
+    width: 450px;
+    padding: 10px;
+    border-radius: 20px;
+    /* Bordes redondeados */
+    border-color: #ffffff;
+    background-color: #20aca9;
+    
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+
+    transition: background-color 0.3s;
+    /* Agregamos una transición suave */
+}
+.button-agregar {
+    width: 450px;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: #5EBC50;
+    background-color: #fafafa;
+
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+
+    transition: background-color 0.3s;
+  
+    /* Agregamos una transición suave */
+}
+.button-comprar:hover {
+    background-color: #5EBC50;
+    color: #000000;
+    /* Cambiamos el color al pasar el cursor */
+}
+
+
+
+.button-agregar:hover {
+    background-color: #5EBC50;
+    /* Cambiamos el color al pasar el cursor */
+    color: #ffffff;
+}
+
+
+/*Css para la imagen logo arriba de la pagina*/
+.leftImage {
+    cursor: pointer;
+}
+
+
+/*Estilo del icono ocultar y mostra contraseña*/
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#showPassword,
+#hidePassword {
+    position: absolute;
+    right: 15px; /* Ajusta la posición horizontal */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+/*Estilos para el buscador---------------------------------------------------------------------------------*/
+/* Estilo para la lista de resultados */
+/* Estilo para la lista de resultados */
+#lista {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+    max-height: 200px; /* Limita la altura máxima de la lista */
+    overflow-y: auto; /* Permite desplazamiento vertical si la lista es larga */
+    overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+    position: absolute;
+    z-index: 9999; /* Asegura que la lista esté por encima de otros elementos */
+    background-color: #fff; /* Color de fondo de la lista */
+    border-radius: 0.25rem; /* Borde redondeado */
+}
+
+/* Estilo para los elementos de la lista */
+#lista li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transición suave */
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilo para los elementos de la lista al pasar el cursor */
+#lista li:hover {
+    background-color: #48B6C1; /* Color de fondo al pasar el cursor */
+    color: white; /* Color del texto al pasar el cursor */
+    transform: scale(1.02); /* Pequeño efecto de escala */
+    border-radius: 5px;
+}
+/* Estilo para el contenedor del formulario */
+.form-container {
+    position: relative;
+    /* Permite posicionar la lista de resultados correctamente */
+    max-width: 600px;
+    /* Ancho máximo del contenedor */
+    margin: 50px auto;
+    /* Centra el contenedor horizontalmente */
+}
+
+/* Estilo para el input*/
+.form-control {
+    /* Borde redondeado */
+    border-color: #5EBC50;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    background-color: #fafafa;
+    font-family: Poppins;
+}
+
+/* Estilo para eliminar el subrayado y cambiar el color del enlace */
+.no-decoration {
+    text-decoration: none;
+    color: black;
+    /* Color del texto */
+}
+
+.input-group-text {
+    font-family: Poppins;
+}
+
+/*Diseño login---------------------------------------------------------------------------------*/
+
+.login {
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login span {
+    color: #3d3d3d;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.login img {
+    height: auto;
+    width: 18px;
+    opacity: 0.8;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon input {
+    padding-right: 30px;
+    /* Ajusta el espacio para el icono */
+}
+
+.fa-eye,
+.fa-eye-slash {
+    position: absolute;
+    right: 25px;
+    top: calc(54% - 10px);
+    /* Ajusta verticalmente al centro */
+    cursor: pointer;
+}
+
+#ocultarPassword,
+#verPassword {
+    position: absolute;
+    right: 25px;
+    /* Ajusta verticalmente al centro */
+    cursor: pointer;
+}
+
+#ocultarPassword{
+    top: calc(75% - 10px);
+}
+#verPassword{
+    top: calc(75% - 10px);
+}
+#mostIcon,
+#oculIcon {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+.password-icons {
+    position: relative;
+    height: 80px;
+    /* Altura fija para el contenedor del icono */
+}
+
+#mostIcon {
+    top: calc(-20% - 10px);
+    /* Ajusta verticalmente al centro */
+}
+
+#oculIcon {
+    top: calc(-20% - 10px);
+    /*Ajusta verticalmente al centro */
+}
+
+/*Diseño carro compras---------------------------------------------------------------------------------*/
+.carro-compras {
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 20px;
+    color: #3d3d3d;
+
+    text-decoration: none !important;
+}
+
+.carro-compras img {
+    width: auto !important;
+    height: 4vh !important;
+    cursor: pointer;
+}
+
+/*Estilos cerrar sesion---------------------------------------------------------------------------------*/
+.cerrarSesion {
+    font-family: Poppins;
+    font-weight: 600;
+    color: #5EBC50;
+    font-size: 2vh;
+
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cerrarSesion:hover {
+    color: #5EBC50;
+    text-decoration: none;
+}
+
+/*Css para la bienbenida label---------------------------------------------------------------------------------*/
+.bienvenido {
+    display: flex;
+    align-items: center;
+
+    width: 200px;
+    height: auto;
+
+    margin-left: 80px;
+}
+
+.bienvenido label {
+    font-family: Poppins;
+    font-weight: 600;
+    color: #20aca9;
+    font-size: 1.8vh;
+}
+
+/*Menu desplegable de opciones---------------------------------------------------------------------------------*/
+.menuOptions {
+    width: 100%;
+    display: flex;
+    margin-top: 0vh;
+    margin-left: 0px;
+    background: #ffffff;
+    color: #5EBC50;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 3vh;
+}
+
+.categoriesDropdown {
+    margin-left: 0px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+}
+
+.dropdownToggle {
+    display: flex;
+    cursor: pointer;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.overlay.show {
+    display: block;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    top: 45vh;
+    left: 30vh;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    z-index: 2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdownContent.show {
+    display: block;
+}
+
+.categoriesDropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.categoriesDropdown li {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.categoriesDropdown li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.categoriesDropdown li a:hover {
+    background-color: #f5f5f5;
+}
+
+/*Estilos para el carousel de imagenes---------------------------------------------------------------------------------*/
+.carousel-container {
+    position: relative;
+    z-index: 2;
+    width: 99%;
+    /*max-width: 1280px;*/
+    /*margin: 0% auto;*/
+    overflow: hidden;
+    /*margin-top: 18vh;*/
+    border-radius: 15px;
+
+    margin-left: 1vh;
+    /*display: flex;
+    justify-content: center;*/
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4vh;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.arrow:hover {
+    opacity: 2;
+}
+
+.arrow-left {
+    left: 1vh;
+}
+
+.arrow-right {
+    right: 1vh;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*CSS para los productos---------------------------------------------------------------------------------*/
+/*CSS para los productos---------------------------*/
+/*
+.separadorProductos {
+    margin-top: 47px;
+}
+*/
+.card { /*CSS DE LA INFORMACION DE LOS PRODUCTOS*/
+    display: flex;
+    flex-direction: column;
+ 
+    border: none;
+    
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    font-family: Arial;/*tipo de letra para titulo de los productos*/
+    
+    font-weight: 600;
+    
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: auto;
+    padding: 20px;
+}
+/*TITULO DEL PRODUCTO)*/
+.card-title {
+    color: #6c757d;
+    font-size: 16px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+/*TEXTO DEL PRODUCTO(PRECIO/UNIDAD)*/
+.card-text {
+    font-size: 15px;
+    color: #6c757d;
+}
+.d-grid{
+    margin-top: auto;
+}
+
+.btn-productos {
+    background-color: #20aca9 !important;
+    display: block;
+    width: 100%; /* Asegura que el botón tenga el mismo ancho */
+    border: none !important;
+    border-radius: 15px !important;
+    color: #ffffff !important;
+    font-size: 2.4vh !important;
+    padding: 2vh !important;
+    text-align: center; /* Asegura que el texto esté bien alineado */
+}
+.btn-productos:hover {
+    background-color: #5EBC50 !important;
+}
+
+/* Estilos para artes intermedias---------------------------------------------------------------------------------*/
+.oferta {
+    margin-top: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.oferta .img-oferta {
+    width: 120vh;
+    max-width: 100%;
+    height: auto;
+}
+
+.productos-debajo-oferta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+.botbar {
+    width: 100%;
+    height: 500px;
+}
+
+/* Estilos para el formulario Login flotante---------------------------------------------------------------------------------*/
+#loginForm {
+    font-family: Poppins !important;
+}
+
+.login-input {
+    border: 1px solid #ccc !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+    /* Bordes redondeados */
+    border-color: #5EBC50 !important;
+    font-size: 1.8vh !important;
+    width: 100% !important;
+}
+
+.button-login {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    /* Bordes redondeados */
+    background-color: #5EBC50;
+
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*Estilos para el REGISTRATE*/
+.registrate {
+    color: #0400ff;
+    cursor: pointer;
+}
+
+/*Estilos para ventana de Registro flotante---------------------------------------------------------------------------------*/
+#registerForm {
+    font-family: Poppins !important;
+    font-weight: 400 !important;
+    /*grosor letra*/
+}
+
+.separador {
+    margin-top: 2vh !important;
+}
+
+#registerForm input {
+    /*width: 200px;
+    margin-left: 5px;*/
+    padding: 18px;
+    border: 1px solid #5EBC50;
+    /*border: 4px solid #ffffff;*/
+    border-radius: 20px;
+    /* Bordes redondeados */
+    font-size: 1.8vh;
+}
+
+.register-comboBox {
+    /*width: 200px;*/
+    padding: 8px !important;
+    border: 1px solid #5EBC50 !important;
+    border-radius: 20px !important;
+    font-size: 1.8vh !important;
+    /* Personalización del cursor */
+    cursor: pointer !important;
+    /* Personalización del color de fondo y texto */
+    background-color: #fff !important;
+    color: #333 !important;
+}
+
+.button-register {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    /* Bordes redondeados */
+    background-color: #5EBC50;
+    margin-top: 2vh;
+
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Para cambiar el estilo del triángulo de despliegue en los navegadores */
+.register-combo-box::-ms-expand {
+    display: none;
+}
+
+.button-create-account {
+    width: 350px;
+    padding: 10px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 20px;
+    /* Bordes redondeados */
+    background-color: #5EBC50;
+
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-create-account:hover {
+    background-color: #20aca9;
+}
+
+/*Footer CSS---------------------------------------------------------------------------------*/
+
+
+
+.categorias {
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 10px;
+    justify-content: center;
+}
+
+.categorias a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+    transition: background-color 0.3s;
+}
+
+.categorias a:hover {
+    background-color: #bbb;
+}
+
+.carro-compras {
+    width: 8vh;
+    height: 4vh;
+    margin-left: 8vh;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.carro-compras img {
+    width: 12px;
+    height: 12px;
+}
+
+/* Consulta de medios para pantallas medianas (ej. tablets) */
+@media screen and (min-width: 718px) and (max-width: 1170px) {
+    .topBar {
+        width: 100%;
+        height: 25px;
+    }
+
+    .telefono {
+        margin-left: 40px;
+        font-size: 8px;
+    }
+
+    .searchBar {
+        /*width: 300px;
+        height: 8px;*/
+        margin-left: 40px;
+    }
+
+    .searchBar input {
+        padding: 9px;
+        width: 250px;
+        height: 30px;
+
+        font-size: 15px;
+    }
+
+    .searchBar button {
+        padding: 9px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .searchBar img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .leftImage {
+        width: 25vh;
+        margin-left: 3vh;
+    }
+
+
+    .login {
+        margin-left: 30px;
+        font-size: 10px;
+    }
+
+    .login-image {
+        width: 12px;
+        margin-right: 6px;
+    }
+
+    .menuOptions {
+        height: 40px;
+    }
+
+    .dropdownToggle {
+        margin-left: 30px;
+        font-size: 9px;
+        margin-top: 12px;
+    }
+
+    .logoGroup {
+        width: 80px;
+        height: 30px;
+        margin-top: 12px;
+        margin-left: 80px;
+    }
+
+    .logoGroup2 {
+        width: 150px;
+        height: 30px;
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+
+    .logoGroup3 {
+        width: 80px;
+        height: 30px;
+        margin-top: 12px;
+        margin-left: 0px;
+    }
+
+    .logoGroup5 {
+        width: 80px;
+        height: 30px;
+        margin-top: 12px;
+        margin-left: 100px;
+    }
+
+
+    .groupText {
+        margin-left: 10px;
+        font-size: 9px;
+    }
+
+    .smallImage {
+        width: 15px;
+        /* Ajusta el tamaño de la imagen según tus necesidades */
+        margin-right: 5px;
+    }
+
+    .smallImage2 {
+        width: 10px;
+        /* Ajusta el tamaño de la imagen según tus necesidades */
+        margin-right: 5px;
+    }
+
+    .carro-compras {
+        width: 9vh;
+        height: 4vh;
+        margin-left: 10vh;
+        border-radius: 15px;
+        font-size: 14px;
+    }
+
+    .carro-compras img {
+        width: 16px;
+        height: 16px;
+    }
+
+}
+
+/* Consulta de medios para pantallas más grandes (ej. computadoras de escritorio) */
+@media screen and (min-width: 1170px) {
+    .topBar {
+        width: 100%;
+        height: 35px;
+    }
+
+    .telefono {
+        margin-left: 80px;
+        font-size: 12px;
+    }
+
+    .searchBar {
+        /*width: 400px;
+        height: 10px;*/
+        margin-left: 50px;
+    }
+
+    .searchBar input {
+        padding: 9px;
+        width: 350px;
+        height: 40px;
+
+        font-size: 15px;
+    }
+
+    .searchBar button {
+        padding: 9px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .searchBar img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .leftImage {
+        width: 35vh;
+        margin-left: 4vh;
+    }
+
+    .login {
+        margin-left: 140px;
+        font-size: 12px;
+    }
+
+    .login-image {
+        width: 15px;
+        margin-right: 8px;
+    }
+
+    .menuOptions {
+        height: 40px;
+    }
+
+    .dropdownToggle {
+        margin-left: 60px;
+        font-size: 12px;
+        margin-top: 12px;
+    }
+
+    .logoGroup {
+        margin-top: 12px;
+        margin-left: 100px;
+    }
+
+    .logoGroup2 {
+        margin-top: 12px;
+        margin-left: 40px;
+    }
+
+    .logoGroup3 {
+        margin-top: 12px;
+        margin-left: 40px;
+    }
+
+    .logoGroup5 {
+        margin-top: 12px;
+        margin-left: 120px;
+    }
+
+
+    .groupText {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .carousel-container {
+        margin-top: 4vh;
+    }
+
+    .smallImage {
+        width: 20px;
+        /* Ajusta el tamaño de la imagen según tus necesidades */
+        margin-right: 5px;
+    }
+
+    .smallImage2 {
+        width: 14px;
+        /* Ajusta el tamaño de la imagen según tus necesidades */
+        margin-right: 5px;
+    }
+
+    .carro-compras {
+        width: 10vh;
+        height: 5vh;
+        margin-left: 15vh;
+        border-radius: 15px;
+        font-size: 18px;
+    }
+
+    .carro-compras img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/*Agregado*/
+.detalles {
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+}
+
+/* Botón del acordeón cerrado (estado inicial) */
+.accordion-button {
+    background-color: white !important; /* Color inicial */
+    color: black !important; /* Color del texto */
+    transition: background-color 0.3s, color 0.3s, font-weight 0.3s;
+}
+
+/* Cuando se pasa el mouse sobre el botón */
+.accordion-button:hover {
+    background-color: #d63384 !important; /* Color morado */
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Cuando el acordeón está abierto */
+.accordion-button:not(.collapsed) {
+    background-color: #d63384 !important; /* Color morado */
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Cuando el contenido del acordeón está expandido */
+.accordion-body {
+    background-color: #1A8D92 !important; /* Verde */
+    color: white !important; /* Texto en blanco */
+}
+
+/* Cuando se cierra, volver a su color inicial */
+.accordion-button.collapsed {
+    background-color: white !important;
+    color: black !important;
+    font-weight: normal;
+}
+
+/* Remover bordes o sombras al hacer clic */
+.accordion-button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+
+/* Asegúrate de que no haya desbordamiento en el eje horizontal */
+html, body  {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Esto oculta el desbordamiento horizontal */
+    box-sizing: border-box; /* Asegura que los márgenes y el padding no sumen al tamaño total */
+}
+
+.input-with-icon {
+    position: relative;
+}
+.img-producto {
+    width: 100%;  /* Ajusta el ancho al 100% del contenedor*/
+    height: 230px; /*Tamaño fijo para todas las imágenes*/
+    object-fit: contain; /* Mantiene la proporción sin recortar */
+}
