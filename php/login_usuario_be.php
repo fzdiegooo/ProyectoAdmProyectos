@@ -37,7 +37,7 @@ try {
                 "success" => true,
                 "requires_2fa" => true,
                 "message" => "Verificación 2FA requerida",
-                "redirect" => "/ProyectoCapstone/php/verificar_2fa.php"
+                "redirect" => "php/verificar_2fa.php"
             ]);
             exit;
         }
@@ -51,7 +51,7 @@ try {
                 echo json_encode([
                     "success" => true, 
                     "message" => "Inicio de sesión como Administrador.", 
-                    "redirect" => "/ProyectoCapstone/Admin/admin-page.php"
+                    "redirect" => "Admin/admin-page.php"
                 ]);
                 break;
                 
@@ -59,7 +59,7 @@ try {
                 echo json_encode([
                     "success" => true, 
                     "message" => "Bienvenido Trabajador.", 
-                    "redirect" => "/ProyectoCapstone/Trabajador/pedidos.php"
+                    "redirect" => "Trabajador/pedidos.php"
                 ]);
                 break;
                 
@@ -74,7 +74,7 @@ try {
                 echo json_encode([
                     "success" => true, 
                     "message" => "Inicio de sesión exitoso.", 
-                    "redirect" => "/ProyectoCapstone/Cliente/cliente-page.php"
+                    "redirect" => "Cliente/cliente-page.php"
                 ]);
                 break;
                 

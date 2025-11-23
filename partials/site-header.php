@@ -64,7 +64,7 @@ $num_cart = isset($num_cart) ? $num_cart : 0;
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body pt-0">
-                <form action="php/login_usuario_be.php" method="POST" id="loginForm">
+                <form method="POST" id="loginForm">
                     <div class="mb-3">
                         <label for="correo" class="form-label">Correo electrónico</label>
                         <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo electrónico..." required>
@@ -88,6 +88,49 @@ $num_cart = isset($num_cart) ? $num_cart : 0;
         </div>
     </div>
 </div>
+
+<script>
+// Manejo del formulario de login
+document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.getElementById('loginForm');
+    if (loginForm) {
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            // Obtener la ruta base del proyecto
+            const pathParts = window.location.pathname.split('/');
+            const projectIndex = pathParts.indexOf('ProyectoAdmProyectos');
+            let basePath = '/';
+            if (projectIndex !== -1) {
+                basePath = '/' + pathParts.slice(1, projectIndex + 1).join('/') + '/';
+            }
+            
+            fetch(basePath + 'php/login_usuario_be.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    if (data.requires_2fa) {
+                        window.location.href = data.redirect;
+                    } else {
+                        window.location.href = data.redirect;
+                    }
+                } else {
+                    alert(data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error al iniciar sesión. Por favor, intente nuevamente.');
+            });
+        });
+    }
+});
+</script>
 
 <!-- Register Modal -->
 <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">

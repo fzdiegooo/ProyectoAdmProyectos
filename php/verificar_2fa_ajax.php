@@ -38,12 +38,12 @@ try {
         
         // Determinar redirección según rol
         $redirects = [
-            'admin' => '/ProyectoCapstone/Admin/admin-page.php',
-            'vendedor' => '/ProyectoCapstone/Trabajador/pedidos.php',
-            'cliente' => '/ProyectoCapstone/Cliente/cliente-page.php'
+            'admin' => 'Admin/admin-page.php',
+            'vendedor' => 'Trabajador/pedidos.php',
+            'cliente' => 'Cliente/cliente-page.php'
         ];
         
-        $redirect = $redirects[$rol] ?? '/ProyectoCapstone/index.php';
+        $redirect = $redirects[$rol] ?? 'index.php';
         
         echo json_encode([
             "success" => true,
