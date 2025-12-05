@@ -207,7 +207,7 @@ $productosCategoria = $sqlProductosCategoria->fetchAll(PDO::FETCH_ASSOC);
                             </a>
                         </div>
                         <div class="card-body d-flex flex-column" style="padding:1.2rem;">
-                            <span class="badge badge-category mb-2"><?= $nombre_categoria ?></span>
+                            <!-- <span class="badge badge-category mb-2"><?= $nombre_categoria ?></span> -->
                             <a href="detalles.php?codigo=<?php echo $row['codigo']; ?>&token=<?php echo hash_hmac('sha1', $row['codigo'], KEY_TOKEN); ?>" style="text-decoration:none; color:inherit;">
                                 <h5 class="card-title mb-2" style="font-size:1rem; font-weight:600; color:#222; min-height:42px; line-height:1.4;"><?= $row['descripcion'] ?></h5>
                             </a>

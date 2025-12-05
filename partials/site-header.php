@@ -82,7 +82,7 @@ $num_cart = isset($num_cart) ? $num_cart : 0;
                 </form>
                 <div class="text-center mt-2" style="font-family: Poppins;">
                     <p class="mb-1">¿No tienes cuenta? <span data-bs-toggle="modal" data-bs-target="#registerModal" class="registrate text-success" style="cursor:pointer;">Regístrate</span></p>
-                    <p class="mb-0">¿Olvidaste tu contraseña? <a href="Cliente/recovery.php">Recuperar</a></p>
+                    <p class="mb-0">¿Olvidaste tu contraseña? <a href="#" id="recoveryLink">Recuperar</a></p>
                 </div>
             </div>
         </div>
@@ -92,6 +92,21 @@ $num_cart = isset($num_cart) ? $num_cart : 0;
 <script>
 // Manejo del formulario de login
 document.addEventListener('DOMContentLoaded', function() {
+    // Configurar el enlace de recuperación de contraseña
+    const recoveryLink = document.getElementById('recoveryLink');
+    if (recoveryLink) {
+        recoveryLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            const pathParts = window.location.pathname.split('/');
+            const projectIndex = pathParts.indexOf('ProyectoAdmProyectos');
+            let basePath = '/';
+            if (projectIndex !== -1) {
+                basePath = '/' + pathParts.slice(1, projectIndex + 1).join('/') + '/';
+            }
+            window.location.href = basePath + 'Cliente/recovery.php';
+        });
+    }
+
     const loginForm = document.getElementById('loginForm');
     if (loginForm) {
         loginForm.addEventListener('submit', function(e) {

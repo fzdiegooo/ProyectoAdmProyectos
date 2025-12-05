@@ -36,7 +36,7 @@
             </div>
 
             <div class="text-center mt-3">
-                <a href="http://localhost/ProyectoCapstone/Cliente/cliente-page.php">Volver al inicio de sesión</a>
+                <a href="../index.php">Volver al inicio</a>
             </div>
         </form>
     </div>

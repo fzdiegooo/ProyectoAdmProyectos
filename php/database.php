@@ -10,7 +10,7 @@ class Database
     {
         #Se definen las constantes para la conexion
 
-        $servidor = getenv('DB_HOST') !== false ? getenv('DB_HOST') : '86.48.21.43';
+        $servidor = getenv('DB_HOST') !== false ? getenv('DB_HOST') : 'localhost'; //86.48.21.43
         $nombre_bd = getenv('DB_NAME') !== false ? getenv('DB_NAME') : 'bd_electronic';
         $usuario = getenv('DB_USER') !== false ? getenv('DB_USER') : 'root';
         $password = getenv('DB_PASS') !== false ? getenv('DB_PASS') : 'root';
